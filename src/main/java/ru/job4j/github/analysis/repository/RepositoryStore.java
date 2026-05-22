@@ -9,4 +9,6 @@ public interface RepositoryStore extends JpaRepository<Repository, Long> {
 
     Optional<Repository> findByName(String name);
 
+    Optional<Repository> findByUrl(String url);
+
 }
